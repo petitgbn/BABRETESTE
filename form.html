@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formes et Boutons en CSS</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  /* Formes de base */
+  .carre, .cercle, .rectangle-arrondi, .triangle, .hexagone, .cercle-avec-point {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carre {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+
+  .cercle {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50%;
+  }
+
+  .rectangle-arrondi {
+    width: 150px;
+    height: 100px;
+    background-color: green;
+    border-radius: 20px;
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid orange;
+  }
+
+  .hexagone {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+
+  .cercle-avec-point {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border-radius: 50%;
+  }
+
+  .cercle-avec-point::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 45px;
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    border-radius: 50%;
+  }
+
+  /* Rectangles inclinés */
+  .diagonal-rectangle {
+    width: 200px;
+    height: 100px;
+    background-color: teal;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  }
+
+  .skew-rectangle {
+    width: 200px;
+    height: 100px;
+    background-color: orange;
+    transform: skew(-20deg);
+  }
+
+  .slanted-edges {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-color: lightgray;
+  }
+
+  .slanted-edges::before,
+  .slanted-edges::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background-color: black;
+  }
+
+  .slanted-edges::before {
+    transform: skewY(-20deg);
+    left: 0;
+  }
+
+  .slanted-edges::after {
+    transform: skewY(20deg);
+    right: 0;
+  }
+
+  /* Boutons stylés */
+  .btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+
+  .btn-red {
+    background-color: #f44336;
+  }
+
+  .btn-red:hover {
+    background-color: #d32f2f;
+  }
+</style>
+</head>
+<body>
+
+<h1>Exemples de Formes et Boutons en CSS</h1>
+
+<div class="container">
+  <div class="carre"></div>
+  <div class="cercle"></div>
+  <div class="rectangle-arrondi"></div>
+  <div class="triangle"></div>
+  <div class="hexagone"></div>
+  <div class="cercle-avec-point"></div>
+  <div class="diagonal-rectangle"></div>
+  <div class="skew-rectangle"></div>
+  <div class="slanted-edges"></div>
+</div>
+
+<div class="container">
+  <button class="btn">Bouton Vert</button>
+  <button class="btn btn-red">Bouton Rouge</button>
+</div>
+
+</body>
+</html>
