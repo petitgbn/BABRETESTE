@@ -15,17 +15,22 @@
     <header>
 
         <nav>
-            <h2>Barber <span>shop</span></h2>
+            <h2>Barber <span>Shop</span> Prestige</h2>
             <ul class="link">
-                
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#">Nos Services</a></li>
                 <li><a href="#">Galerie</a></li>
                 <li><a href="#">À propos</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-            <button class="btn-cont"><a href="#">Contactez-nous</a></button>
+            <div class="btn-cont"><a href="#">Contactez-nous</a></div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
+
         <div class="h-tete">
             <p> <i class="fa fa-clock"></i>Lundi – Samedi : 8h – 19h
             </p>
@@ -131,12 +136,18 @@
             <h3 class="TITRE">NOS Horaires d'Ouverture</h3>
             <ul class="horaires-list">
                 <li><span class="jour">Lundi</span> <span class="heure"><i class="fa  fa-clock"></i>8h - 19h</span></li>
-                <li><span class="jour">Mardi</span> <span class="heure"><i class="fa  fa-clock"></i>8h8h - 19h</span></li>
-                <li><span class="jour">Mercredi</span> <span class="heure"><i class="fa  fa-clock"></i>8h8h - 19h</span></li>
-                <li><span class="jour">Jeudi</span> <span class="heure"><i class="fa  fa-clock"></i>8h8h - 19h</span></li>
-                <li><span class="jour">Vendredi</span> <span class="heure"><i class="fa  fa-clock"></i>8h8h - 19h</span></li>
-                <li><span class="jour">Samedi</span> <span class="heure"><i class="fa  fa-clock"></i>8h8h - 19h</span></li>
-                <li><span class="jour">Dimanche</span> <span class="heure"><i class="fa  fa-clock"></i>8h8h - 12h</span></li>
+                <li><span class="jour">Mardi</span> <span class="heure"><i class="fa  fa-clock"></i>8h8h - 19h</span>
+                </li>
+                <li><span class="jour">Mercredi</span> <span class="heure"><i class="fa  fa-clock"></i>8h8h - 19h</span>
+                </li>
+                <li><span class="jour">Jeudi</span> <span class="heure"><i class="fa  fa-clock"></i>8h8h - 19h</span>
+                </li>
+                <li><span class="jour">Vendredi</span> <span class="heure"><i class="fa  fa-clock"></i>8h8h - 19h</span>
+                </li>
+                <li><span class="jour">Samedi</span> <span class="heure"><i class="fa  fa-clock"></i>8h8h - 19h</span>
+                </li>
+                <li><span class="jour">Dimanche</span> <span class="heure"><i class="fa  fa-clock"></i>8h8h - 12h</span>
+                </li>
             </ul>
 
         </section>
@@ -162,21 +173,10 @@
                 </p>
             </div>
         </section>
-        
+
         <section class="Galerie">
             <h2 class="TITRE">Galerie</h2>
-            <section class="slider">
-                <div class="slides">
-                    <img src="assets/img/2.png" alt="">
-                    <img src="assets/img/5.png" alt="">
-                    <img src="assets/img/4.png" alt="">
-                    <img src="assets/img/3.png" alt="">
-                    <img src="assets/img/6.png" alt="">
-                    <img src="assets/img/1.png" alt="">
-                </div>
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
-            </section>
+            
 
             <!-- GALERIE -->
 
@@ -192,46 +192,46 @@
             </section>
         </section>
         <!-- SLIDER -->
-       <section class="testimonial">
-        <div class="left">
-            <h2 class="TITRE">Témoignages</h2>
-            <h3 class="big_title">Ce que nos <br> clients disent</h3>
-            <p class="text">
-Prenez rendez-vous dès aujourd’hui et <br> révélez le meilleur de votre style !
-</p>
-            
-            
-            <div class="comment">
-                <p>Excellent service, équipe très professionnelle et ambiance chaleureuse. Ma coupe est parfaite !
-</p>
-                <div class="profil">
-                    <img src="assets/img/1.png" alt="">
-                    <samp>Kossi T</samp>
-                </div>
-            </div>
-        </div>
+        <section class="testimonial">
+            <div class="left">
+                <h2 class="TITRE">Témoignages</h2>
+                <h3 class="big_title">Ce que nos <br> clients disent</h3>
+                <p class="text">
+                    Prenez rendez-vous dès aujourd’hui et <br> révélez le meilleur de votre style !
+                </p>
 
-        <div class="right">
-            <div class="comment down">
-                <p>Le rasage traditionnel est incroyable, je recommande vivement 
-</p>
-                <div class="profil">
-                    <img src="assets/img/2.png" alt="">
-                    <samp>David A.</samp>
+
+                <div class="comment">
+                    <p>Excellent service, équipe très professionnelle et ambiance chaleureuse. Ma coupe est parfaite !
+                    </p>
+                    <div class="profil">
+                        <img src="assets/img/1.png" alt="">
+                        <samp>Kossi T</samp>
+                    </div>
                 </div>
             </div>
-            <div class="comment">
-                <p>Un salon moderne avec une équipe qui sait vraiment ce qu’elle fait
-</p>
-                <div class="profil">
-                    <img src="assets/img/3.png" alt="">
-                    <samp>Marc L</samp>
+
+            <div class="right">
+                <div class="comment down">
+                    <p>Le rasage traditionnel est incroyable, je recommande vivement
+                    </p>
+                    <div class="profil">
+                        <img src="assets/img/2.png" alt="">
+                        <samp>David A.</samp>
+                    </div>
+                </div>
+                <div class="comment">
+                    <p>Un salon moderne avec une équipe qui sait vraiment ce qu’elle fait
+                    </p>
+                    <div class="profil">
+                        <img src="assets/img/3.png" alt="">
+                        <samp>Marc L</samp>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    
-        
+        </section>
+
+
     </main>
     <footer class="footer">
         <div class="footer-container">
@@ -242,10 +242,12 @@ Prenez rendez-vous dès aujourd’hui et <br> révélez le meilleur de votre sty
                         <span class="icon icon-scissors"></span>
                         Barbershop Prestige
                     </div>
-                    <p>Le salon moderne pour hommes à Lomé où style, confort et qualité se rencontrent. Nous vous garantissons un look unique et soigné qui révèle le meilleur de votre personnalité.</p>
-                    <p><strong>Notre mission :</strong> Faire de chaque visite un moment agréable et professionnel, où vous repartez confiant et satisfait.</p>
-                    <a href="#" class="cta-button">
-                        <span class="icon icon-calendar"></span>
+                    <p>Le salon moderne pour hommes à Lomé où style, confort et qualité se rencontrent. Nous vous
+                        garantissons un look unique et soigné qui révèle le meilleur de votre personnalité.</p>
+                    <p><strong>Notre mission :</strong> Faire de chaque visite un moment agréable et professionnel, où
+                        vous repartez confiant et satisfait.</p>
+                    <a href="#" class="btn" style="margin-top: 20px;">
+                        <span class="fa fa-calendar" style="margin-right: 10px; color: aliceblue; " ></span>
                         Prendre Rendez-vous
                     </a>
                 </div>
@@ -271,7 +273,8 @@ Prenez rendez-vous dès aujourd’hui et <br> révélez le meilleur de votre sty
                             <span class="price">Sur demande</span>
                         </li>
                     </ul>
-                    <p style="margin-top: 20px; font-size: 0.9rem; font-style: italic;">Tous nos services respectent les normes d'hygiène les plus strictes pour votre sécurité et votre confort.</p>
+                    <p style="margin-top: 20px; font-size: 0.9rem; font-style: italic;">Tous nos services respectent les
+                        normes d'hygiène les plus strictes pour votre sécurité et votre confort.</p>
                 </div>
 
                 <!-- Section Contact -->
@@ -295,7 +298,7 @@ Prenez rendez-vous dès aujourd’hui et <br> révélez le meilleur de votre sty
                             Voir sur Google Maps
                         </li>
                     </ul>
-                    
+
                     <!-- Newsletter 
                     <div class="newsletter-form">
                         <h4 style="color: #f37005; margin-bottom: 10px;">Newsletter</h4>
@@ -308,51 +311,52 @@ Prenez rendez-vous dès aujourd’hui et <br> révélez le meilleur de votre sty
                         </div>
                     </div>-->
                     <div class="footer-section">
-                    
-                    <!-- Réseaux sociaux -->
-                    <h4 style="color: #f37005; margin: 25px 0 15px 0;">Suivez-nous</h4>
-                    <div class="social-links">
-                        <a href="#" title="Facebook">
-                            <span class="icon icon-facebook "><i class="fab fa-facebook-f"></i></span>
-                        </a>
-                        <a href="#" title="Instagram">
-                            <span class="icon icon-instagram"><i class="fab fa-instagram"></i></span>
-                        </a>
-                        <a href="#" title="WhatsApp">
-                            <span class="icon icon-whatsapp"><i class="fab fa-whatsapp"></i></span>
-                        </a>
-                        <a href="#" title="TikTok">
-                            <span class="icon icon-tiktok "><i class="fab fa-tiktok"></i></span>
-                        </a>
+
+                        <!-- Réseaux sociaux -->
+                        <h4 style="color: #b8941f; margin: 25px 0 15px 0;">Suivez-nous</h4>
+                        <div class="social-links">
+                            <a href="#" title="Facebook">
+                                <span class="icon icon-facebook "><i class="fab fa-facebook-f"></i></span>
+                            </a>
+                            <a href="#" title="Instagram">
+                                <span class="icon icon-instagram"><i class="fab fa-instagram"></i></span>
+                            </a>
+                            <a href="#" title="WhatsApp">
+                                <span class="icon icon-whatsapp"><i class="fab fa-whatsapp"></i></span>
+                            </a>
+                            <a href="#" title="TikTok">
+                                <span class="icon icon-tiktok "><i class="fab fa-tiktok"></i></span>
+                            </a>
+                        </div>
                     </div>
-                </div>
                 </div>
 
                 <!-- Section Horaires & Social -->
-                
+
             </div>
 
             <!-- Footer Bottom -->
-            
+
         </div>
-    </footer>
-    <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    
-                    <div class="footer-links">
-                        <a href="#accueil">Accueil</a>
-                        <a href="#services">Services</a>
-                        <a href="#galerie">Galerie</a>
-                        <a href="#about">À propos</a>
-                        <a href="#contact">Contact</a>
-                        <a href="#mentions">Mentions légales</a>
-                        <a href="#confidentialite">Confidentialité</a>
-                    </div>
-                    <div class="copyright">
-                        <p>&copy; 2025 Barbershop Prestige. Tous droits réservés. | Lomé, Togo</p>
-                    </div>
-                </div>
+        <div class="footer-bottom">
+        <div class="footer-bottom-content">
+
+            <div class="footer-links">
+                <a href="#accueil">Accueil</a>
+                <a href="#services">Services</a>
+                <a href="#galerie">Galerie</a>
+                <a href="#about">À propos</a>
+                <a href="#contact">Contact</a>
+                <a href="#mentions">Mentions légales</a>
+                <a href="#confidentialite">Confidentialité</a>
             </div>
+            <div class="copyright">
+                <p>&copy; 2025 Barbershop Prestige. Tous droits réservés. | Lomé, Togo</p>
+            </div>
+        </div>
+    </div>
+    </footer>
+    
     <script src="script.js"></script>
 </body>
 

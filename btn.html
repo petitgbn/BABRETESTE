@@ -1,0 +1,186 @@
+ ```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie 30 Boutons Animés</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f6fa;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    button {
+      position: relative;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      overflow: hidden;
+    }
+
+    /* 1 */
+    .btn1 { background:#007bff; color:#fff; }
+    .btn1:hover { transform:scale(1.1); }
+
+    /* 2 */
+    .btn2 { background:#2ecc71; color:#fff; }
+    .btn2:hover { background:#27ae60; }
+
+    /* 3 */
+    .btn3 { background:#e74c3c; color:#fff; }
+    .btn3:hover { border-radius:50px; }
+
+    /* 4 */
+    .btn4 { background:#8e44ad; color:#fff; }
+    .btn4:hover { transform:rotate(-5deg) scale(1.05); }
+
+    /* 5 */
+    .btn5 { background:#f39c12; color:#fff; }
+    .btn5:hover { letter-spacing:3px; }
+
+    /* 6 */
+    .btn6 { background:#1abc9c; color:#fff; }
+    .btn6:hover { box-shadow:0 0 20px #1abc9c; }
+
+    /* 7 */
+    .btn7 { background:#34495e; color:#fff; }
+    .btn7:hover { transform:translateY(-5px); }
+
+    /* 8 */
+    .btn8 { background:#d35400; color:#fff; }
+    .btn8:hover { transform:scale(0.9); }
+
+    /* 9 */
+    .btn9 { background:#2c3e50; color:#fff; border:2px solid transparent; }
+    .btn9:hover { border-color:#fff; }
+
+    /* 10 */
+    .btn10 { background:#27ae60; color:#fff; }
+    .btn10:hover { background:linear-gradient(45deg,#27ae60,#2ecc71); }
+
+    /* 11 */
+    .btn11 { background:#c0392b; color:#fff; }
+    .btn11:hover { filter:brightness(1.3); }
+
+    /* 12 */
+    .btn12 { background:#16a085; color:#fff; }
+    .btn12:hover { transform:skewX(15deg); }
+
+    /* 13 */
+    .btn13 { background:#2980b9; color:#fff; }
+    .btn13:hover { transform:scaleX(1.2); }
+
+    /* 14 */
+    .btn14 { background:#7f8c8d; color:#fff; }
+    .btn14:hover { transform:scaleY(1.2); }
+
+    /* 15 */
+    .btn15 { background:#9b59b6; color:#fff; }
+    .btn15:hover { border:2px dashed #fff; }
+
+    /* 16 */
+    .btn16 { background:#f1c40f; color:#fff; }
+    .btn16:hover { background:#f39c12; transform:rotate(3deg); }
+
+    /* 17 */
+    .btn17 { background:#e67e22; color:#fff; }
+    .btn17:hover { box-shadow:inset 0 0 10px #fff; }
+
+    /* 18 */
+    .btn18 { background:#34495e; color:#fff; }
+    .btn18:hover { transform:translateX(10px); }
+
+    /* 19 */
+    .btn19 { background:#e84393; color:#fff; }
+    .btn19:hover { background:#fd79a8; }
+
+    /* 20 */
+    .btn20 { background:#00cec9; color:#fff; }
+    .btn20:hover { filter:blur(1px); }
+
+    /* 21 */
+    .btn21 { background:#6c5ce7; color:#fff; }
+    .btn21:hover { text-shadow:0 0 5px #fff; }
+
+    /* 22 */
+    .btn22 { background:#b2bec3; color:#2d3436; }
+    .btn22:hover { color:#fff; background:#636e72; }
+
+    /* 23 */
+    .btn23 { background:#dfe6e9; color:#2d3436; }
+    .btn23:hover { border:2px solid #2d3436; }
+
+    /* 24 */
+    .btn24 { background:#ff7675; color:#fff; }
+    .btn24:hover { transform:rotate(-10deg); }
+
+    /* 25 */
+    .btn25 { background:#55efc4; color:#2d3436; }
+    .btn25:hover { background:#00b894; color:#fff; }
+
+    /* 26 */
+    .btn26 { background:#ffeaa7; color:#2d3436; }
+    .btn26:hover { transform:scale(1.3) rotate(5deg); }
+
+    /* 27 */
+    .btn27 { background:#fab1a0; color:#2d3436; }
+    .btn27:hover { opacity:0.7; }
+
+    /* 28 */
+    .btn28 { background:#74b9ff; color:#fff; }
+    .btn28:hover { background:linear-gradient(90deg,#74b9ff,#0984e3); }
+
+    /* 29 */
+    .btn29 { background:#a29bfe; color:#fff; }
+    .btn29:hover { box-shadow:0 0 15px #6c5ce7; }
+
+    /* 30 */
+    .btn30 { background:#fdcb6e; color:#2d3436; }
+    .btn30:hover { transform:scale(1.1) rotate(-3deg); }
+  </style>
+</head>
+<body>
+
+  <button class="btn1">Bouton 1</button>
+  <button class="btn2">Bouton 2</button>
+  <button class="btn3">Bouton 3</button>
+  <button class="btn4">Bouton 4</button>
+  <button class="btn5">Bouton 5</button>
+  <button class="btn6">Bouton 6</button>
+  <button class="btn7">Bouton 7</button>
+  <button class="btn8">Bouton 8</button>
+  <button class="btn9">Bouton 9</button>
+  <button class="btn10">Bouton 10</button>
+  <button class="btn11">Bouton 11</button>
+  <button class="btn12">Bouton 12</button>
+  <button class="btn13">Bouton 13</button>
+  <button class="btn14">Bouton 14</button>
+  <button class="btn15">Bouton 15</button>
+  <button class="btn16">Bouton 16</button>
+  <button class="btn17">Bouton 17</button>
+  <button class="btn18">Bouton 18</button>
+  <button class="btn19">Bouton 19</button>
+  <button class="btn20">Bouton 20</button>
+  <button class="btn21">Bouton 21</button>
+  <button class="btn22">Bouton 22</button>
+  <button class="btn23">Bouton 23</button>
+  <button class="btn24">Bouton 24</button>
+  <button class="btn25">Bouton 25</button>
+  <button class="btn26">Bouton 26</button>
+  <button class="btn27">Bouton 27</button>
+  <button class="btn28">Bouton 28</button>
+  <button class="btn29">Bouton 29</button>
+  <button class="btn30">Bouton 30</button>
+
+</body>
+</html>
+
